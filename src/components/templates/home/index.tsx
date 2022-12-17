@@ -1,9 +1,12 @@
-import styles from "./styles.module.scss";
+import Genre from "@/utils/models/genre";
+import View from "./view";
 
-export type HomeTemplate = {
-  title: string;
+export type HomeProps = {
+  genres: Genre[];
 };
 
-export default function HomeTemplate({ title }: HomeTemplate) {
-  return <p className={styles.home__title}>{title}</p>;
-}
+const Home = (props: HomeProps) => {
+  return <View {...props} />;
+};
+
+export default Home;

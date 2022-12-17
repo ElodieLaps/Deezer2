@@ -1,5 +1,40 @@
 .home {
-   &__title {
-      color: brown;
+   max-width: 100vw;
+   height: 100vh;
+}
+
+.container {
+   overflow-y: hidden;
+   overflow-x: auto;
+   width: 100vw;
+   padding: 8px;
+
+}
+
+.genres {
+   width: 100vw;
+   height: 108px;
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+
+}
+
+.genre {
+
+   &__image {
+      border-radius: 100%;
+      overflow: hidden;
+      height: 100px;
+      width: 100px;
+   }
+
+   &__name {
+      z-index: 1;
+      position: relative;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      margin-top: -66px;
    }
 }

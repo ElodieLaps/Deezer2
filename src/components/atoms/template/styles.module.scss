@@ -1,0 +1,36 @@
+.template {
+   &__container {
+      width: 100vw;
+      height: 100vh;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+   }
+
+   &__header {
+      width: 100vw;
+      height: 48px;
+      position: sticky;
+      top: 0;
+      background-color: grey;
+      z-index: 1;
+   }
+
+   &__main {
+      min-height: calc(100vh - 48px);
+
+      &__content {
+         min-height: 100vh;
+      }
+
+      &__wave {
+         position: sticky;
+         bottom: 0;
+      }
+   }
+
+   &__footer {
+      height: 48px;
+      opacity: 0.45;
+   }
+}

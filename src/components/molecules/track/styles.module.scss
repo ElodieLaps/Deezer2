@@ -1,0 +1,50 @@
+   .track {
+
+      &__duration {
+         text-align: right;
+         margin-right: 8px;
+         font-size: 12px;
+      }
+
+      &__image {
+         min-height: 100px;
+         min-width: 100px;
+         max-height: 100px;
+         max-width: 100px;
+         overflow-y: hidden;
+         border-radius: 16px;
+         background: linear-gradient(145deg, #e6e6e6, #ffffff);
+         box-shadow: 10px 10px 20px #7d7d7d, -10px -10px 20px #ffffff;
+      }
+
+      @media screen and (min-width: 768px) {
+         width: 48%;
+      }
+
+      @media screen and (min-width: 1440px) {
+         width: 32%;
+      }
+   }
+
+   .text {
+      color: #262626;
+
+      &__track {
+         font-weight: bold;
+      }
+
+      &__album {
+         font-size: 14px;
+         text-transform: uppercase;
+      }
+
+      &__artist {
+         font-weight: 600;
+         font-size: 14px;
+         margin-bottom: 8px;
+      }
+   }
+
+   .audio {
+      width: 100%;
+   }

@@ -1,0 +1,45 @@
+.searchBar {
+   box-shadow: 10px 10px 20px #cfcfcf,
+      -10px -10px 20px #ffffff;
+   z-index: 2;
+   top: 0;
+   position: sticky;
+   background-color: #f8f8f8;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+
+   background: rgba(255, 255, 255, 0.25);
+   backdrop-filter: blur(17px);
+   -webkit-backdrop-filter: blur(17px);
+}
+
+.container {
+   display: flex;
+   gap: 8px;
+   padding: 8px 16px;
+   align-items: flex-end;
+}
+
+.clearButton {
+   color: #262626;
+   font-size: 12px;
+   padding: 8px;
+   border-radius: 8px;
+   background: linear-gradient(145deg, #ffffff, #e6e6e6);
+   box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff;
+
+   &:active {
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff;
+   }
+}
+
+.searchFilters {
+   display: flex;
+   flex-direction: row;
+   padding: 8px;
+   gap: 8px;
+   justify-content: center;
+   align-items: center;
+}

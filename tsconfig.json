@@ -18,10 +18,17 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/styles/*": ["assets/styles/*"],
-      "@/mock/*": ["mock/*"]
+      "@/mock/*": ["mock/*"],
+      "@/utils/*": ["utils/*"]
     }
   },
   "compileOnSave": true,
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.config.js",
+    "src/utils/types"
+  ],
   "exclude": ["node_modules"]
 }
