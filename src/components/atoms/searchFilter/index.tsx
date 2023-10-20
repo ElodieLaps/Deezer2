@@ -3,6 +3,7 @@ import View from "./view";
 
 export type SearchFilterProps = {
   handleTypeChange: (value: SearchTypeEnum) => void;
+  selected: SearchTypeEnum | null;
 };
 
 export type FilterType = {

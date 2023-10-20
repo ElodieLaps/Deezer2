@@ -57,6 +57,7 @@ const Search = (props: SearchProps) => {
         handleKeywordChange={handleKeywordChange}
         handleTypeChange={handleTypeChange}
         searchState={searchState}
+        selected={searchState.type}
         {...props}
       />
     </>

@@ -12,9 +12,10 @@ const View = (props: ViewProps) => {
     handleKeywordChange,
     handleTypeChange,
     hasKeywordOrResult,
+    selected,
   } = props;
   const ref = useRef<HTMLInputElement | null>(null);
-  const searchFilterProps = { handleTypeChange };
+  const searchFilterProps = { handleTypeChange, selected };
 
   return (
     <div className={styles.searchBar}>

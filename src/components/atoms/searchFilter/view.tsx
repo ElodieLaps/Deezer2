@@ -6,14 +6,19 @@ interface ViewProps extends SearchFilterProps {
 }
 
 const View = (props: ViewProps) => {
-  const { filters, handleTypeChange } = props;
-  
+  const { filters, handleTypeChange, selected = null } = props;
+
   return (
     <div className={styles.searchFilters}>
       {filters.map((item: FilterType) => {
         return (
           <button key={item.type} onClick={() => handleTypeChange(item.type)}>
-            {item.label}
+            <span className={`${item.type === selected && styles.selected}`}>
+              <>
+                {item.label}
+                {console.log("type", selected, item.type)}
+              </>
+            </span>
           </button>
         );
       })}

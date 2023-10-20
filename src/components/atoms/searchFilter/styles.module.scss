@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: row;
     padding: 8px;
-    gap:8px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
- }
+}
+
+.selected {
+    text-decoration: underline;
+}

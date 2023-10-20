@@ -9,10 +9,12 @@ interface ViewType extends SearchProps {
   handleKeywordChange: (value: string) => void;
   handleTypeChange: (value: SearchTypeEnum) => void;
   searchState: SearchStateType;
+  selected: SearchTypeEnum | null;
 }
 
 const View = (props: ViewType) => {
-  const { handleKeywordChange, handleTypeChange, searchState } = props;
+  const { handleKeywordChange, handleTypeChange, searchState, selected } =
+    props;
   const { keyword, result, isLoading } = searchState;
 
   const searchBarProps = {
@@ -20,6 +22,7 @@ const View = (props: ViewType) => {
     handleKeywordChange: handleKeywordChange,
     handleTypeChange: handleTypeChange,
     hasKeywordOrResult: !!keyword || !!result?.data.length,
+    selected: selected,
   };
   const resultListProps = {
     data: result?.data,

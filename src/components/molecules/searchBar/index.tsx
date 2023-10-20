@@ -6,6 +6,7 @@ export type SearchBarProps = {
   handleKeywordChange: (value: string) => void;
   handleTypeChange: (value: SearchTypeEnum) => void;
   hasKeywordOrResult: boolean;
+  selected: SearchTypeEnum | null;
 };
 
 const SearchBar = (props: SearchBarProps) => {
