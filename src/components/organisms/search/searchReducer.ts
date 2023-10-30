@@ -61,7 +61,7 @@ const debounceKeyword = debounce(
    300
 );
 
-const getFistResult = async (
+const getFirstResult = async (
    dispatch: (action: ActionType) => void,
    searchState: SearchStateType
 ) => {
@@ -114,7 +114,7 @@ const fetchResult = async (
 
 ) => {
    if (!searchState?.result?.data?.length) {
-      await getFistResult(dispatch, searchState);
+      await getFirstResult(dispatch, searchState);
    }
    if (
       !!searchState.result?.nextPageIndex &&
